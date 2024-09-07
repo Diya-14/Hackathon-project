@@ -1,32 +1,146 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to right, #fbc2eb, #a6c0fe); /* Soft pink to blue gradient */
+    color: #333;
 }
+
+/* Header Styling */
 header {
-    text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
+    background: linear-gradient(to right, #ff6f61, #d8335b); /* Pink gradient */
     color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #d8335b;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffeb3b; /* Bright yellow for main heading */
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Yellow hover effect */
+}
+
+/* Section Styling */
 section {
     padding: 20px;
-    margin: 10px 0;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-button {
-    display: block;
     margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #4CAF50;
+    width: 80%;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+section:hover {
+    background: #f9f9f9;
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+/* Heading Styling */
+section h2 {
+    font-size: 2rem;
+    color: #ff5722; /* Bright orange */
+    border-bottom: 2px solid #ff5722;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: bold;
+}
+
+/* Subheading Styling */
+section h3 {
+    font-size: 1.4rem;
+    color: #607d8b; /* Cool blue-grey */
+    margin: 15px 0;
+    font-weight: bold;
+    position: relative;
+}
+
+section h3::before {
+    content: '•';
+    display: inline-block;
+    margin-right: 10px;
+    color: #607d8b;
+}
+
+/* Button Styling */
+button {
+    background: #ff5722; /* Bright orange */
     color: white;
     border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
 }
+
 button:hover {
-    background-color: #45a049;
+    background: #e64a19;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ff6f61, #d8335b); /* Pink gradient */
+    color: white;
+    border-top: 5px solid #d8335b;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+footer a {
+    color: #ffff00; /* Bright yellow for email link */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffeb3b; /* Bright yellow on hover */
+}
+
+/* Hide/Show Section */
+.hidden {
+    display: none;
 }
